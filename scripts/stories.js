@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     if (storyName) {
       // Fetch the story content from the respective HTML file
-      fetch(`/stories/${storyName}.html`)
+      fetch(`../stories/${storyName}.html`)
         .then(response => {
           if (!response.ok) {
             throw new Error("Story not found");
