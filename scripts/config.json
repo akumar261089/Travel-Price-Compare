@@ -1,0 +1,13 @@
+{
+    "regions": {
+      "USA": ["https://www.expedia.com", "https://www.priceline.com"],
+      "Canada": ["https://www.aircanada.com", "https://www.westjet.com"],
+      "Europe": ["https://www.eurostar.com", "https://www.skyscanner.net"],
+      "India": ["https://www.makemytrip.com", "https://www.cleartrip.com"]
+    },
+    "affiliateLinks": {
+      "https://www.expedia.com": "?affiliate=123",
+      "https://www.makemytrip.com": "?affiliate=abc"
+    }
+  }
+  

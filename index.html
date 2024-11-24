@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Price Compare</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/script.js"></script>
+  <style>
+    /* Simple styling for suggestion dropdown */
+    .suggestions {
+      border: 1px solid #ccc;
+      border-top: none;
+      max-height: 150px;
+      overflow-y: auto;
+      position: absolute;
+      background: white;
+      z-index: 1000;
+      width: 300px;
+    }
+    .suggestions div {
+      padding: 8px;
+      cursor: pointer;
+    }
+    .suggestions div:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Price Compare</h1>
+    <p>Find the best travel deals across multiple websites!</p>
+  </header>
+
+  <main>
+    <!-- Travel Form -->
+    <section id="travel-form-section">
+      <h2>Plan Your Travel</h2>
+      <form id="travel-form" autocomplete="off">
+        <div style="position: relative;">
+          <label for="from-location">From:</label>
+          <input type="text" id="from-location" name="from-location" placeholder="Enter departure location" required>
+          <!-- Suggestion dropdown for "From" location -->
+          <div id="from-suggestions" class="suggestions"></div>
+        </div>
+        <div style="position: relative;">
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+          <!-- Suggestion dropdown for "Destination" -->
+          <div id="destination-suggestions" class="suggestions"></div>
+        </div>
+        <div>
+          <label for="from-date">From:</label>
+          <input type="date" id="from-date" name="from-date" required>
+        </div>
+        <div>
+          <label for="to-date">To:</label>
+          <input type="date" id="to-date" name="to-date" required>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <!-- Comparison Results -->
+    <section id="comparison-section">
+      <h2>Price Comparison</h2>
+      <div id="comparison-results">
+        <p>Fill out the form above and click "Search" to see the best rates.</p>
+      </div>
+    </section>
+
+    <!-- Travel Stories -->
+    <section id="story-carousel">
+      <div class="carousel-container">
+        <div class="carousel-content">
+          <img src="" alt="Story Image" class="story-image" id="story-image">
+          <h2 id="story-title"></h2>
+          <p id="story-description"></p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Travel Price Compare. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
