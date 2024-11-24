@@ -130,6 +130,16 @@ function displayStory(index) {
   storyDescription.textContent = story.description;
   storyTitle.textContent = story.title;
   storyImage.src = story.image;
+
+  // Create a hyperlink for the story title
+  const titleLink = document.createElement('a');
+  titleLink.href = story.url;
+  titleLink.target = '_blank';  // Open the link in a new tab
+  titleLink.textContent = story.title;  // Set the title text
+
+  // Set the story title to the hyperlink
+  storyTitle.innerHTML = '';  // Clear any existing content
+  storyTitle.appendChild(titleLink);  // Append the link to the title
 }
 
 // Event listener for "Next" button
