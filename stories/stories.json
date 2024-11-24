@@ -1,17 +1,17 @@
 [
   {
     "title": "Journey to the Mountains",
-    "image": "/images/story1.jpg",
+    "image": "./images/story1.jpg",
     "description": "A thrilling journey through the majestic mountains, filled with adventure and breathtaking views."
   },
   {
     "title": "Exploring the Desert",
-    "image": "/images/story2.jpg",
+    "image": "./images/story2.jpg",
     "description": "A journey into the heart of the desert, experiencing its beauty and harsh conditions."
   },
   {
     "title": "City Life Adventures",
-    "image": "/images/story3.jpg",
+    "image": "./images/story3.jpg",
     "description": "Exploring the hustle and bustle of the city, from skyscrapers to hidden gems."
   }
 ]
